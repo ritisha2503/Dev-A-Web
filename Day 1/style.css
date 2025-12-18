@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(8, 41, 117);
+    padding: 20px;
+    color: white;
+}
+
+.nav-left h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgb(45, 80, 164);
+}

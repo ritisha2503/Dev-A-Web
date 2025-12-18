@@ -116,8 +116,33 @@ function updateUI(row, col) {
 
 function switchPlayer() {
     currentPlayer = currentPlayer === 'red' ? 'yellow' : 'red';
+
+    statusEl.textContent = 
+        currentPlayer === 'red' 
+            ? "Player 1 (Red) - Your turn" 
+            : "Player 2 (Yellow) - Your turn";
 }
 
+
+resetBtn.addEventListener('click', () => {
+    initBoard();
+    createBoardHTML();
+    statusEl.style.background = '#f8f9fa';
+    statusEl.style.color = 'black';
+    statusEl.textContent = currentPlayer === 'red'
+        ? "Player 1 (Red) - Your turn"
+        : "Player 2 (Yellow) - Your turn";
+});
+
+
+newGameBtn.addEventListener('click', () => {
+    initBoard();
+    createBoardHTML();
+    currentPlayer = 'red';
+    statusEl.style.background = '#f8f9fa';
+    statusEl.style.color = 'black';
+    statusEl.textContent = "Player 1 (Red) - Your turn";
+});
 
 initBoard();
 createBoardHTML();

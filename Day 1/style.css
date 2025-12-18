@@ -101,6 +101,8 @@ body {
     grid-template-rows: repeat(6, 60px);
     gap: 5px;
     background: rgb(45, 80, 164);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .cell{

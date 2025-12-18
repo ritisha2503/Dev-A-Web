@@ -36,3 +36,10 @@ body {
 .nav-link:hover {
     background-color: rgb(45, 80, 164);
 }
+
+.container {
+    display: grid;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px;
+}

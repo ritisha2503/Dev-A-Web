@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect Four</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
     <div class="navbar">
         <div class="nav-left">
             <h2>Connect Four Game</h2>
         </div>
         <div class="nav-right">
-            <a href="#" class = "nav-link">Home</a>
-            <a href="#" class = "nav-link">Rules</a>
-            <a href="#" class = "nav-link">About</a>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Rules</a>
+            <a href="#" class="nav-link">About</a>
         </div>
     </div>
 
     <div class="container">
 
-        <div class = "player-panel">
-            <div class = "player red-player">
+        <div class="player-panel">
+            <div class="player red-player">
                 <div class="player-color red"></div>
                 <div>
                     <h3>Player 1</h3>
-                    <p class = "p-label">(Red)</p>
+                    <p class="p-label">(Red)</p>
                 </div>
             </div>
-            <div class = "player yellow-player">
+
+            <div class="player yellow-player">
                 <div class="player-color yellow"></div>
                 <div>
                     <h3>Player 2</h3>
-                    <p class = "p-label">(Yellow)</p>
+                    <p class="p-label">(Yellow)</p>
                 </div>
             </div>
         </div>
-
         <div class="board-section">
-            <div class="status-box">Player 1 (Red) - Your turn</div>
-            <div class="board"></div>
+            <div id="status" class="status-box">Player 1 (Red) — Your Turn</div>
+            <div id="board"></div>
+
             <div class="buttons">
-                <button id ="reset">Reset Game</button>
-                <button id ="new-game">New Game</button>
+                <button id="reset">Reset Board</button>
+                <button id="new-game">New Game</button>
             </div>
         </div>
 
-        <div class = "instructions">
+        <div class="instructions">
             <h3>How to Play</h3>
             <ul>
-                <li>Players take turns dropping their colored discs into columns.</li>
-                <li>The disc will fall into the lowest empty slot.</li>
+                <li>Players take turns dropping discs into columns.</li>
+                <li>The disc will fall to the lowest empty slot.</li>
                 <li>First player uses <strong>Red</strong>.</li>
                 <li>Second player uses <strong>Yellow</strong>.</li>
                 <li>Click a column to place your disc.</li>
@@ -62,6 +63,5 @@
     </div>
 
     <script src="index.js"></script>
-
 </body>
 </html>
